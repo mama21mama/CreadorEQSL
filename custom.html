@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Creador QSL - Custom</title>
+<style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            align-items: center;
+            height: 500px;
+            margin: 30;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .link {
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        form {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgb(31, 162, 250);
+            border: 5px solid #081838;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #555;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #fff;
+            background-color: #535353;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(40, 40, 78);
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0080ff;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+Archivos admitidos .PNG - Tamaño 1,5Mb (max)</br>
+Pixeles admitidos 800x600 </br>
+Tomada con celular en modo rectangulo.</br>
+<a href="https://www.img2go.com/resize-image"  target="_blank">Convierta sus Imagenes - Click Aqui</a></br>
+</br>
+<form onSubmit="if(!confirm('ACEPTE PARA CONTINUAR...luego espere a que su imagen suba al servidor. Sea paciente. Vera su imagen en pantalla al finalizar.')){return false;}" action="upload.php" method="post" enctype="multipart/form-data">
+  <!-- Select image to upload: -->
+Selecciona la imagen para subir:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Subir Imagen" name="submit">
+</form>
+</br>
+<a href="https://reisub.nsupdate.info/qsl/">Volver</a>
+</div>
+</body>
+</html>
+

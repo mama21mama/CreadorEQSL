@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador QSL</title>
+
+</head>
+
+<body>
+<!--
+source https://github.com/parzibyte/texto-imagenes-php.git
+Creador de Tarjetas QSL por LU4EHF
+-->
+
+<!--
+<a href="invitado.php">Si eres invitado click aqui</a><br><br>
+<a href="invitado2.php">if you are a guest - english</a>
+-->
+<br>
+<br>
+ <div class="container">
+   <form action="/qsl/uploads/procesar9.php">
+<input type="text" name="qra" required placeholder="QRA">
+        <input type="text" name="qra" required placeholder="QRA">
+        <br><br>
+	<input type="text" name="nombre" required placeholder="Nombre">
+        <br><br>
+        <input type="text" name="fecha" required placeholder="Fecha">
+        <br><br>
+        <input type="text" name="hora" required placeholder="Hora">
+        <br><br>
+        <input type="text" name="mhz" required placeholder="MHz">
+        <br><br>
+        <input type="text" name="modo" required placeholder="Modo">
+        <br><br>
+        <input type="text" name="rst" required placeholder="RST">
+        <br><br>
+
+
+        <button type="submit">Enviar</button>
+    </form>
+<div>
+<font size="1">
+<a href="https://reisub.nsupdate.info/reisub/" title="ver informacion del servidor">Reisub</a> Creador QSL (C) 2024 Desde Junin, Buenos Aires, Argentina. Corriendo en Debian. <a href="https://reisub.nsupdate.info/reisub/">Donar a la causa.</a>
+</font>
+</body>
+
+</html>
